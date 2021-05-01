@@ -1,0 +1,6 @@
+
+
+window_center();
+
+
+
