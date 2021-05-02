@@ -7,8 +7,17 @@ camera_set_view_size(view, view_width, view_height);
 //set position of view
 if(instance_exists(obj_player))
 {
-	var new_x = clamp(obj_player.x - view_width/2,0,room_width - view_width);
-	var new_y = clamp(obj_player.y - view_height/2,0,room_height - view_height);
+	var center_of_player_x = obj_player.x - view_width/2;
+	var center_of_player_y = obj_player.y - view_height/2;
+	
+	var to_mouse_dir = point_direction(obj_player.x,obj_player.y,mouse_x,mouse_y);
+	var distance_to_mouse = distance_to_point(mouse_x,mouse_y);
+	var radius_around_player = 15;
+	var offset_mouse_x = lengthdir_x(min(radius_around_player,distance_to_mouse),to_mouse_dir);
+	var offset_mouse_y = lengthdir_y(min(radius_around_player,distance_to_mouse),to_mouse_dir);
+	
+	var new_x = clamp(center_of_player_x + offset_mouse_x,0,room_width - view_width);
+	var new_y = clamp(center_of_player_y + offset_mouse_y,0,room_height - view_height);
 	
 	var old_x = camera_get_view_x(view);
 	var old_y = camera_get_view_y(view);

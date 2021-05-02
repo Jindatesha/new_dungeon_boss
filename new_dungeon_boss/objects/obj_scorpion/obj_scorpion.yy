@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_solid_walls_hor",
-    "path": "sprites/spr_solid_walls_hor/spr_solid_walls_hor.yy",
+    "name": "spr_scorpion",
+    "path": "sprites/spr_scorpion/spr_scorpion.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy",
+    "path": "objects/obj_enemy/obj_enemy.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Meta",
-    "path": "folders/Objects/Meta.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_solid",
+  "name": "obj_scorpion",
   "tags": [],
   "resourceType": "GMObject",
 }
