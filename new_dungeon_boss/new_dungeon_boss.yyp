@@ -9,6 +9,7 @@
     {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},"order":4,},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":0,},
     {"id":{"name":"spr_healthbar","path":"sprites/spr_healthbar/spr_healthbar.yy",},"order":6,},
+    {"id":{"name":"spr_collision_player","path":"sprites/spr_collision_player/spr_collision_player.yy",},"order":7,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_hp_pickup","path":"sprites/spr_hp_pickup/spr_hp_pickup.yy",},"order":1,},
     {"id":{"name":"spr_lootbag","path":"sprites/spr_lootbag/spr_lootbag.yy",},"order":3,},

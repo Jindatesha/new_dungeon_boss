@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_collision_player",
+    "path": "sprites/spr_collision_player/spr_collision_player.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
