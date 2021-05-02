@@ -11,6 +11,6 @@ alarm[0] = 1;
 
 surface_resize(view_width * window_scale,view_height * window_scale);
 
-
+//loklljljojlhnlkhlhlhhlhlhll
 
 
