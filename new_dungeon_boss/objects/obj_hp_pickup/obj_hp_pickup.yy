@@ -1,9 +1,12 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_hp_pickup",
+    "path": "sprites/spr_hp_pickup/spr_hp_pickup.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -17,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Meta",
-    "path": "folders/Objects/Meta.yy",
+    "name": "Pick-Ups",
+    "path": "folders/Objects/Pick-Ups.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_game",
+  "name": "obj_hp_pickup",
   "tags": [],
   "resourceType": "GMObject",
 }
