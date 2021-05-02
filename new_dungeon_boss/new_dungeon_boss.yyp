@@ -9,11 +9,16 @@
     {"id":{"name":"obj_health_pickup","path":"objects/obj_health_pickup/obj_health_pickup.yy",},"order":2,},
     {"id":{"name":"room_main_menu","path":"rooms/room_main_menu/room_main_menu.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":2,},
+<<<<<<< Updated upstream
     {"id":{"name":"obj_lootbag","path":"objects/obj_lootbag/obj_lootbag.yy",},"order":0,},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"order":1,},
     {"id":{"name":"spr_hp_pickup","path":"sprites/spr_hp_pickup/spr_hp_pickup.yy",},"order":3,},
     {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},"order":0,},
+=======
+    {"id":{"name":"ts_dungeon","path":"tilesets/ts_dungeon/ts_dungeon.yy",},"order":5,},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},"order":2,},
+    {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},"order":4,},
     {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},"order":0,},
   ],
   "Options": [
