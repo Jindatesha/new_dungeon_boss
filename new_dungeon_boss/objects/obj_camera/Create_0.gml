@@ -2,12 +2,12 @@
 
 
 //how much camera SEES
-view_width = 1920/10;
-view_height = 1080/10;
+view_width = 1920/16
+view_height = 1080/16
 
 
 //how large the game window is
-window_scale = 3;
+window_scale = 9;
 window_set_size(view_width * window_scale,view_height * window_scale);
 
 //centering window doesnt work in the same frame you are resizing ^
