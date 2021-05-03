@@ -4,6 +4,21 @@
 #macro view_x camera_get_view_x(view)
 #macro view_y camera_get_view_y(view)
 
+
+//enums 
+enum SPRITE_STATE
+{
+	IDLE,
+	RUNNING,
+	ATTACK_1
+}
+
+enum PHYSICAL_STATE
+{
+	NORMAL,
+	ATTACK
+}
+
 //globals
 
 //camera
@@ -24,8 +39,7 @@ draw_set_valign(fa_middle);
 //create all controllers
 instance_create_depth(x,y,depth,obj_camera);
 
-instance_create_depth(x,y,-100,obj_cursor);
-
+instance_create_depth(x,y,depth,obj_cursor);
 
 
 

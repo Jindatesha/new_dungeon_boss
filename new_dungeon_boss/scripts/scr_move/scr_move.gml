@@ -21,6 +21,9 @@ function scr_move(hor_dir, ver_dir)
 		{
 			x += h_speed;
 		}	
+		
+		image_xscale = hor_dir;
+		sprite_state = SPRITE_STATE.RUNNING;
 	}
 
 	x = round(x);
@@ -42,6 +45,8 @@ function scr_move(hor_dir, ver_dir)
 		{
 			y += v_speed;
 		}
+		
+		sprite_state = SPRITE_STATE.RUNNING;
 	}
 
 	y = round(y);
