@@ -7,7 +7,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_pickup",
+    "path": "objects/obj_pickup/obj_pickup.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

@@ -7,6 +7,19 @@ var button_move_down = keyboard_check_direct(ord("S"));
 var button_attack_1 = mouse_check_button_pressed(mb_left);
 
 
+var mouse_dir = point_direction(x,y,mouse_x,mouse_y);
+
+//change image flip depending upon mouse dir
+if (mouse_dir > 270 or mouse_dir < 90)
+{
+	image_xscale = 1;
+}
+else
+{
+	image_xscale = -1;
+}
+
+
 if (physical_state == PHYSICAL_STATE.NORMAL)
 {
 	//default sprite state
@@ -67,11 +80,14 @@ if (physical_state == PHYSICAL_STATE.ATTACK)
 		{
 			sprite_index = spr_player_attack_1_fx;
 			image_index = 0;
-			var other_facing_dir = other.image_xscale;
-			image_xscale = other_facing_dir;
-		
-			x = other.x + (other.fx_offset_x * other_facing_dir);
-		
+			
+			var dir = mouse_dir;
+			var distance = other.fx_offset_x;
+			x = other.x + lengthdir_x(distance,dir);
+			y = other.y + lengthdir_y(distance,dir);
+			
+			image_angle = dir;
+			
 			effect_current_time = 0;
 			effect_max_time = room_speed * 0.2;
 		}

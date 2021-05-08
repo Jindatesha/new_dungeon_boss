@@ -22,15 +22,31 @@ enum PHYSICAL_STATE
 //globals
 
 //camera
-globalvar view_width; 
-globalvar view_height;
+globalvar view_w; 
+globalvar view_h;
 
 globalvar gui_w;
 globalvar gui_h;
 
 
+//settings menu
+globalvar settings_menu_on;
+settings_menu_on = false;
+
+
+globalvar music_vol;
+globalvar sound_vol;
+music_vol = 1;
+sound_vol = 1;
+
+globalvar c_bit_manilla;
+c_bit_manilla = make_color_rgb(249,243,224);
+
 
 //font
+
+//color
+draw_set_color(c_bit_manilla);
 
 //this is made by "codeman38"
 draw_set_font(font_dp_comic);
@@ -41,9 +57,10 @@ instance_create_depth(x,y,depth,obj_camera);
 
 instance_create_depth(x,y,depth,obj_cursor);
 
+instance_create_depth(x,y,depth,obj_settings_menu);
 
 
-room_goto(room_level_1);
+room_goto(room_main_menu);
 
 
 
